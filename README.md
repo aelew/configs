@@ -1,3 +1,3 @@
 # ⚙️ configs
 
-A repository for storing my config files.
+A repository for my config files!
