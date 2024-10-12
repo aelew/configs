@@ -234,6 +234,7 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 // Enter your personal overrides below this line:
 
 user_pref("browser.urlbar.trimHttps", false);
+user_pref("browser.urlbar.autoFill.adaptiveHistory.enabled", true);
 
 // PREF: use DirectWrite everywhere like Chrome [WINDOWS]
 user_pref("gfx.font_rendering.cleartype_params.rendering_mode", 5);
