@@ -58,7 +58,7 @@ user_pref("dom.enable_web_task_scheduling", true);
  * SECTION: SECUREFOX                                                       *
 ****************************************************************************/
 /** TRACKING PROTECTION ***/
-user_pref("browser.contentblocking.category", "strict");
+user_pref("browser.contentblocking.category", "custom");
 user_pref("urlclassifier.trackingSkipURLs", "*.reddit.com, *.twitter.com, *.twimg.com, *.tiktok.com");
 user_pref("urlclassifier.features.socialtracking.skipURLs", "*.instagram.com, *.twitter.com, *.twimg.com");
 user_pref("network.cookie.sameSite.noneRequiresSecure", true);
@@ -233,8 +233,15 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 // visit https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening
 // Enter your personal overrides below this line:
 
-user_pref("browser.urlbar.trimHttps", false);
 user_pref("browser.urlbar.autoFill.adaptiveHistory.enabled", true);
+user_pref("browser.tabs.loadBookmarksInBackground", true);
+user_pref("browser.urlbar.trimHttps", false);
+user_pref("places.frecency.bookmarkVisitBonus", 2000);
+
+// enabling these prefs breaks special unicode characters :/
+user_pref("privacy.resistFingerprinting", false);
+user_pref("privacy.fingerprintingProtection", false);
+user_pref("privacy.fingerprintingProtection.pbmode", false);
 
 // PREF: use DirectWrite everywhere like Chrome [WINDOWS]
 user_pref("gfx.font_rendering.cleartype_params.rendering_mode", 5);
@@ -307,9 +314,6 @@ user_pref("browser.profiles.enabled", true);
 
 // PREF: enable Firefox to use userChome, userContent, etc.
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
-
-// PREF: add compact mode back to options
-user_pref("browser.compactmode.show", true);
 
 // PREF: Cookie Banner handling
 // [NOTE] Feature still enforces Total Cookie Protection to limit 3rd-party cookie tracking [1]
