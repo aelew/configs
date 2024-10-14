@@ -1,0 +1,12 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-d": "editor::DuplicateLineDown",
+      "cmd-alt-l": "editor::Format",
+      "cmd-shift-k": null, // editor::DeleteLine
+      "alt-shift-up": "editor::MoveLineUp", // editor::DuplicateLineUp
+      "alt-shift-down": "editor::MoveLineDown" // editor::DuplicateLineDown
+    }
+  }
+]
