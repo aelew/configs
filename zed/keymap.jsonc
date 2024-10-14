@@ -8,5 +8,18 @@
       "alt-shift-up": "editor::MoveLineUp", // editor::DuplicateLineUp
       "alt-shift-down": "editor::MoveLineDown" // editor::DuplicateLineDown
     }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-r": null, // "workspace::ToggleRightDock",
+      "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "cmd-r": ["buffer_search::Deploy", { "replace_enabled": true }]
+    }
   }
 ]

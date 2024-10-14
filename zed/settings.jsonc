@@ -38,7 +38,12 @@
 
   "tabs": {
     "file_icons": true,
-    "git_status": true
+    "git_status": true,
+    "activate_on_close": "neighbour"
+  },
+
+  "preview_tabs": {
+    "enabled": false
   },
 
   "telemetry": {
