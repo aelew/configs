@@ -46,6 +46,14 @@
     "metrics": false
   },
 
+  "lsp": {
+    "biome": {
+      "settings": {
+        "require_config_file": true
+      }
+    }
+  },
+
   // Add support for additional .env file suffixes
   "file_types": {
     "Shell Script": [
