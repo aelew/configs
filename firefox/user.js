@@ -12,11 +12,11 @@
  * "Ad meliora"                                                             *
  * version: 130                                                             *
  * url: https://github.com/yokoffing/Betterfox                              *
-****************************************************************************/
+ ****************************************************************************/
 
 /****************************************************************************
  * SECTION: FASTFOX                                                         *
-****************************************************************************/
+ ****************************************************************************/
 /** GENERAL ***/
 user_pref("content.notify.interval", 100000);
 
@@ -56,11 +56,17 @@ user_pref("dom.enable_web_task_scheduling", true);
 
 /****************************************************************************
  * SECTION: SECUREFOX                                                       *
-****************************************************************************/
+ ****************************************************************************/
 /** TRACKING PROTECTION ***/
 user_pref("browser.contentblocking.category", "custom");
-user_pref("urlclassifier.trackingSkipURLs", "*.reddit.com, *.twitter.com, *.twimg.com, *.tiktok.com");
-user_pref("urlclassifier.features.socialtracking.skipURLs", "*.instagram.com, *.twitter.com, *.twimg.com");
+user_pref(
+  "urlclassifier.trackingSkipURLs",
+  "*.reddit.com, *.twitter.com, *.twimg.com, *.tiktok.com",
+);
+user_pref(
+  "urlclassifier.features.socialtracking.skipURLs",
+  "*.instagram.com, *.twitter.com, *.twimg.com",
+);
 user_pref("network.cookie.sameSite.noneRequiresSecure", true);
 user_pref("browser.download.start_downloads_in_tmp_dir", true);
 user_pref("browser.helperApps.deleteTempFileOnExit", true);
@@ -165,15 +171,21 @@ user_pref("network.connectivity-service.enabled", false);
 
 /****************************************************************************
  * SECTION: PESKYFOX                                                        *
-****************************************************************************/
+ ****************************************************************************/
 /** MOZILLA UI ***/
 user_pref("browser.privatebrowsing.vpnpromourl", "");
 user_pref("extensions.getAddons.showPane", false);
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 user_pref("browser.discovery.enabled", false);
 user_pref("browser.shell.checkDefaultBrowser", false);
-user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
-user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
+user_pref(
+  "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons",
+  false,
+);
+user_pref(
+  "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features",
+  false,
+);
 user_pref("browser.preferences.moreFromMozilla", false);
 user_pref("browser.aboutConfig.showWarning", false);
 user_pref("browser.aboutwelcome.enabled", false);
@@ -188,7 +200,10 @@ user_pref("browser.display.focus_ring_style", 0);
 user_pref("browser.display.focus_ring_width", 0);
 user_pref("layout.css.prefers-color-scheme.content-override", 2);
 user_pref("browser.privateWindowSeparation.enabled", false); // WINDOWS
-user_pref("browser.newtabpage.activity-stream.newtabWallpapers.v2.enabled", true);
+user_pref(
+  "browser.newtabpage.activity-stream.newtabWallpapers.v2.enabled",
+  true,
+);
 
 /** COOKIE BANNER HANDLING ***/
 user_pref("cookiebanners.service.mode", 1);
@@ -228,7 +243,7 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 
 /****************************************************************************
  * START: MY OVERRIDES                                                      *
-****************************************************************************/
+ ****************************************************************************/
 // visit https://github.com/yokoffing/Betterfox/wiki/Common-Overrides
 // visit https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening
 // Enter your personal overrides below this line:
@@ -246,7 +261,10 @@ user_pref("privacy.fingerprintingProtection.pbmode", false);
 // PREF: use DirectWrite everywhere like Chrome [WINDOWS]
 user_pref("gfx.font_rendering.cleartype_params.rendering_mode", 5);
 user_pref("gfx.font_rendering.cleartype_params.cleartype_level", 100);
-user_pref("gfx.font_rendering.cleartype_params.force_gdi_classic_for_families", "");
+user_pref(
+  "gfx.font_rendering.cleartype_params.force_gdi_classic_for_families",
+  "",
+);
 user_pref("gfx.font_rendering.cleartype_params.force_gdi_classic_max_size", 6);
 user_pref("gfx.font_rendering.directwrite.use_gdi_table_loading", false);
 
@@ -271,7 +289,10 @@ user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.creditCards.enabled", false);
 
 // PREF: set DoH provider
-user_pref("network.trr.uri", "https://dns.dnswarden.com/00000000000000000000048"); // Hagezi Light + TIF
+user_pref(
+  "network.trr.uri",
+  "https://dns.dnswarden.com/00000000000000000000048",
+); // Hagezi Light + TIF
 
 // PREF: enforce DNS-over-HTTPS (DoH)
 user_pref("network.trr.mode", 2);
@@ -297,8 +318,14 @@ user_pref("browser.discovery.enabled", false);
 
 // PREF: disable Extension Recommendations (CFR: "Contextual Feature Recommender")
 // [1] https://support.mozilla.org/en-US/kb/extension-recommendations
-user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
-user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
+user_pref(
+  "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons",
+  false,
+);
+user_pref(
+  "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features",
+  false,
+);
 
 // PREF: hide "More from Mozilla" in Settings
 user_pref("browser.preferences.moreFromMozilla", false);
@@ -336,7 +363,7 @@ user_pref("full-screen-api.transition-duration.leave", "0 0"); // default=200 20
 // [TIP] Use about:reader?url=%s as a keyword to open links automatically in reader mode [1].
 // Firefox will not have to parse webpage for Reader when navigating.
 // Extremely minimal performance impact, if you disable.
-// [1] https://www.reddit.com/r/firefox/comments/621sr2/i_found_out_how_to_automatically_open_a_url_in/ 
+// [1] https://www.reddit.com/r/firefox/comments/621sr2/i_found_out_how_to_automatically_open_a_url_in/
 user_pref("reader.parse-on-load.enabled", false);
 
 // PREF: limit the number of bookmark backups Firefox keeps
@@ -362,29 +389,10 @@ user_pref("devtools.inspector.showAllAnonymousContent", true);
 
 /****************************************************************************
  * SECTION: SMOOTHFOX                                                       *
-****************************************************************************/
+ ****************************************************************************/
 // visit https://github.com/yokoffing/Betterfox/blob/main/Smoothfox.js
 // Enter your scrolling overrides below this line:
 
-/****************************************************************************************
- * OPTION: NATURAL SMOOTH SCROLLING V3 [MODIFIED]                                      *
-****************************************************************************************/
-// credit: https://github.com/AveYo/fox/blob/cf56d1194f4e5958169f9cf335cd175daa48d349/Natural%20Smooth%20Scrolling%20for%20user.js
-// recommended for 120hz+ displays
-// largely matches Chrome flags: Windows Scrolling Personality and Smooth Scrolling
-user_pref("apz.overscroll.enabled", true); // DEFAULT NON-LINUX
-user_pref("general.smoothScroll", true); // DEFAULT
-user_pref("general.smoothScroll.msdPhysics.continuousMotionMaxDeltaMS", 12);
-user_pref("general.smoothScroll.msdPhysics.enabled", true);
-user_pref("general.smoothScroll.msdPhysics.motionBeginSpringConstant", 600);
-user_pref("general.smoothScroll.msdPhysics.regularSpringConstant", 650);
-user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaMS", 25);
-user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaRatio", "2");
-user_pref("general.smoothScroll.msdPhysics.slowdownSpringConstant", 250);
-user_pref("general.smoothScroll.currentVelocityWeighting", "1");
-user_pref("general.smoothScroll.stopDecelerationWeighting", "1");
-user_pref("mousewheel.default.delta_multiplier_y", 300); // 250-400; adjust this number to your liking
-
 /****************************************************************************
  * END: BETTERFOX                                                           *
-****************************************************************************/
+ ****************************************************************************/
