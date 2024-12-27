@@ -15,7 +15,7 @@ adjust-cell-height = 10%
 resize-overlay-duration = 500ms
 macos-titlebar-style = tabs
 
-background = #0D1117
+background = #0d1117
 foreground = #efefeb
 
 palette = 0=#000000
