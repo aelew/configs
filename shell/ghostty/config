@@ -13,8 +13,11 @@ adjust-underline-position = 2
 adjust-cursor-thickness = 6
 adjust-cell-height = 10%
 
-resize-overlay-duration = 500ms
 macos-titlebar-style = tabs
+macos-auto-secure-input = true
+macos-secure-input-indication = true
+
+resize-overlay-duration = 500ms
 
 background = #0d1117
 foreground = #efefeb
