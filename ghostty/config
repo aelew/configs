@@ -1,0 +1,36 @@
+font-family = Menlo
+
+window-width = 112
+window-height = 30
+window-padding-x = 8
+window-step-resize = true
+window-colorspace = display-p3
+
+background-opacity = 0.85
+background-blur-radius = 24
+
+adjust-cursor-thickness = 6
+adjust-cell-height = 10%
+
+resize-overlay-duration = 500ms
+macos-titlebar-style = tabs
+
+background = #0D1117
+foreground = #efefeb
+
+palette = 0=#000000
+palette = 1=#ec675d
+palette = 2=#88f398
+palette = 3=#f4f8a7
+palette = 4=#75c4f9
+palette = 5=#ed73bd
+palette = 6=#aceafb
+palette = 7=#f0f1f0
+palette = 8=#686767
+palette = 9=#ec675d
+palette = 10=#88f398
+palette = 11=#f4f8a7
+palette = 12=#75c4f9
+palette = 13=#ed73bd
+palette = 14=#aceafb
+palette = 15=#f0f1f0
