@@ -21,6 +21,7 @@ macos-auto-secure-input = true
 macos-secure-input-indication = true
 
 resize-overlay-duration = 500ms
+selection-invert-fg-bg = true
 keybind = super+enter=ignore
 
 background = #0d1117
