@@ -4,7 +4,7 @@ format = """
 [ ](bg:#445167)\
 [ ](bg:#5e6c87)\
 [ ](bg:#7d8bad)\
-[  ](bg:#a3aed2 fg:#090c0c)\
+[ 󰌨 ](bg:#a3aed2 fg:#090c0c)\
 [](bg:#769ff0 fg:#a3aed2)\
 $directory\
 [](fg:#769ff0 bg:#394260)\
@@ -27,10 +27,10 @@ truncation_length = 3
 truncation_symbol = "…/"
 
 [directory.substitutions]
-"Documents" = "󰈙"
-"Downloads" = ""
-"Music" = ""
-"Pictures" = ""
+"Documents" = "Documents 󰈙"
+"Downloads" = "Downloads  "
+"Music" = "Music  "
+"Pictures" = "Pictures  "
 
 [git_branch]
 symbol = ""
@@ -66,4 +66,4 @@ disabled = false
 use_12hr = true
 style = "bg:#1d2230"
 time_format = "%l:%M %P" # 8:43 pm
-format = '[[  $time](fg:#a0a9cb bg:#1d2230)]($style)'
+format = '[[ 󱑎 $time](fg:#a0a9cb bg:#1d2230)]($style)'
