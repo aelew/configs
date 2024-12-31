@@ -1,7 +1,8 @@
-font-family = Menlo
+font-family = Terminus (TTF)
+font-size = 16
 
 window-width = 112
-window-height = 30
+window-height = 27
 window-colorspace = display-p3
 
 window-padding-x = 8
@@ -20,6 +21,7 @@ macos-auto-secure-input = true
 macos-secure-input-indication = true
 
 resize-overlay-duration = 500ms
+keybind = super+enter=ignore
 
 background = #0d1117
 foreground = #efefeb
