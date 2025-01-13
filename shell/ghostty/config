@@ -1,8 +1,8 @@
-font-family = Terminus (TTF)
-font-size = 16
+font-family = CommitMono
+font-size = 14
 
-window-width = 112
-window-height = 27
+window-width = 108
+window-height = 32
 window-colorspace = display-p3
 
 window-padding-x = 8
@@ -14,6 +14,7 @@ background-blur-radius = 24
 
 adjust-underline-position = 2
 adjust-cursor-thickness = 6
+adjust-cell-width = -10%
 adjust-cell-height = 10%
 
 macos-titlebar-style = tabs
@@ -21,7 +22,6 @@ macos-auto-secure-input = true
 macos-secure-input-indication = true
 
 resize-overlay-duration = 500ms
-selection-invert-fg-bg = true
 keybind = super+enter=ignore
 
 background = #0d1117
