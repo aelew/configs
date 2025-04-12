@@ -1,18 +1,21 @@
 [
   {
     "settings": {
-      "openEditInWindow": false,
-      "openEditInWindow.popup": false,
-      "windowPosition": {},
-      "show-badge": true,
       "disableAll": false,
       "exposeIframes": false,
       "exposeStyleName": false,
+      "keepAlive": 0,
+      "keepAliveIdle": false,
       "newStyleAsUsercss": false,
+      "openEditInWindow": false,
+      "openEditInWindow.popup": false,
+      "patchCsp": false,
+      "show-badge": true,
       "styleViaASS": false,
       "styleViaXhr": false,
-      "patchCsp": false,
       "urlInstaller": true,
+      "windowPosition": {},
+      "compactWidth": 850,
       "config.autosave": true,
       "schemeSwitcher.enabled": "system",
       "schemeSwitcher.nightStart": "18:00",
@@ -28,9 +31,10 @@
       "manage.onlyEnabled.invert": false,
       "manage.onlyLocal.invert": false,
       "manage.onlyUsercss.invert": false,
-      "manage.actions.expanded": true,
+      "manage.actions.expanded": false,
       "manage.backup.expanded": true,
       "manage.filters.expanded": true,
+      "manage.links.expanded": true,
       "manage.minColumnWidth": 750,
       "manage.newUI": true,
       "manage.newUI.favicons": true,
@@ -41,6 +45,7 @@
       "editor.options": {},
       "editor.toc.expanded": true,
       "editor.options.expanded": true,
+      "editor.options.style.expanded": true,
       "editor.lint.expanded": true,
       "editor.publish.expanded": true,
       "editor.lineWrapping": true,
@@ -118,7 +123,7 @@
     ],
     "updateDate": 1712705362079,
     "_id": "49595bfa-a9f4-432a-97ea-fbc1c99c8371",
-    "_rev": 1728725377966,
+    "_rev": 1744064224059,
     "id": 1
   },
   {
@@ -127,29 +132,98 @@
     "name": "mail.google.com",
     "sections": [
       {
-        "code": "deepl-gmail-header-toolbar {\n    display: none;\n}\n",
+        "code": "deepl-gmail-header-toolbar,\ndiv[id^=\"mp-sent-icon-\"] {\n    display: none;\n}\n\n.inboxsdk__label_has_icon > div > div:nth-child(2) {\n    margin-left: 11px !important;\n}",
         "domains": [
           "mail.google.com"
         ]
       }
     ],
-    "updateDate": 1726560960068,
+    "updateDate": 1736128867519,
     "_id": "b338ec07-a88f-4276-bf88-96f57d06c436",
-    "_rev": 1728725377966,
+    "_rev": 1744064224059,
     "id": 2
   },
   {
     "enabled": true,
     "installDate": 1728892825597,
-    "name": "FF Font Smoothing",
+    "name": "Font Smoothing",
     "sections": [
       {
-        "code": "body {\n    -moz-osx-font-smoothing: grayscale;\n}"
+        "code": "body {\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}"
       }
     ],
-    "updateDate": 1728893003092,
+    "updateDate": 1744065401474,
     "_id": "04e5d87c-bf85-4843-8433-328357209f00",
-    "_rev": 1728893003092,
+    "_rev": 1744065401474,
     "id": 3
+  },
+  {
+    "enabled": true,
+    "installDate": 1730344811768,
+    "name": "catcourses.ucmerced.edu",
+    "sections": [
+      {
+        "code": "#tfc-wall-sina > div[opacity=\"1\"] {\n    display: none;\n}",
+        "domains": [
+          "catcourses.ucmerced.edu"
+        ]
+      }
+    ],
+    "updateDate": 1730344945635,
+    "_id": "05a0b4f6-7609-4ca9-b90e-878bf61875e9",
+    "_rev": 1744064224059,
+    "id": 4
+  },
+  {
+    "enabled": true,
+    "installDate": 1733997663849,
+    "name": "mail.proton.me/u/0/inbox",
+    "sections": [
+      {
+        "code": ".item-container:hover {\n    opacity: 0.85;\n}",
+        "urlPrefixes": [
+          "https://mail.proton.me/u/"
+        ]
+      }
+    ],
+    "updateDate": 1733998102898,
+    "_id": "5d032136-9514-4692-a37b-ef89d0ac0285",
+    "_rev": 1744064224059,
+    "id": 5
+  },
+  {
+    "enabled": true,
+    "installDate": 1734245437369,
+    "name": "https://assessments.macmillanlearning.com/",
+    "sections": [
+      {
+        "code": ".copyright-div {\n    display: none;\n}",
+        "urlPrefixes": [
+          "https://assessments.macmillanlearning.com/"
+        ]
+      }
+    ],
+    "updateDate": 1734245502644,
+    "_id": "b0d9d347-d194-4462-a30d-40c1a10f94ae",
+    "_rev": 1744064224059,
+    "id": 6
+  },
+  {
+    "enabled": true,
+    "installDate": 1740093168632,
+    "name": "github.com",
+    "sections": [
+      {
+        "code": ".blob-code-inner, .markdown-body pre > code, .markdown-body .highlight > pre {\n    white-space: pre-wrap !important;\n    overflow-wrap: anywhere !important;\n  }\n  /* GitHub Bug: Enable wrapping of long code lines */\n  body:not(.nowrap) .blob-code-inner,\n  body:not(.nowrap) .markdown-body pre > code,\n  body:not(.nowrap) .markdown-body .highlight > pre {\n    white-space: pre-wrap !important;\n    overflow-wrap: anywhere !important;\n    display: block !important;\n    word-break: break-all !important;\n  }\n  body:not(.nowrap) td.blob-code-inner {\n    display: table-cell !important;\n  }",
+        "domains": [
+          "github.com",
+          "gist.github.com"
+        ]
+      }
+    ],
+    "updateDate": 1740093168632,
+    "_id": "63a975d8-187e-44fb-845d-077c2659052d",
+    "_rev": 1744064224059,
+    "id": 7
   }
 ]
