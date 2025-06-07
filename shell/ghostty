@@ -24,7 +24,9 @@ macos-secure-input-indication = true
 resize-overlay-duration = 500ms
 selection-invert-fg-bg = true
 confirm-close-surface = false
+
 keybind = super+enter=ignore
+keybind = super+shift+x=clear_screen
 
 background = #0d1117
 foreground = #efefeb
