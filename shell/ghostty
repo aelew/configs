@@ -9,8 +9,8 @@ window-padding-x = 8
 window-padding-balance = true
 window-padding-color = extend
 
-background-opacity = 0.75
-background-blur-radius = 24
+background-opacity = 0.9
+background-blur-radius = 48
 
 adjust-underline-position = 2
 adjust-cursor-thickness = 6
