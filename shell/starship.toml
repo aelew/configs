@@ -60,4 +60,4 @@ disabled = false
 use_12hr = true
 style = "bg:#1d2230"
 time_format = "%l:%M %P" # 8:43 pm
-format = '[[$time](fg:#a0a9cb bg:#1d2230)]($style)'
+format = '[[ $time](fg:#a0a9cb bg:#1d2230)]($style)'
